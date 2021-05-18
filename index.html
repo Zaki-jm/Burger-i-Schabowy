@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&family=Spartan:wght@500&display=swap" rel="stylesheet"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Burger i Schabowy</title>
     <script src="https://kit.fontawesome.com/d28d2b51e3.js" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="fav.png" type="image/x-icon">
 </head>
-<body>
-    <nav id='navbar' class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id='navbar' class="navbar navbar-expand-lg position-fixed top-0 w-100 py-4">
         <div class="container">
           <a class="navbar-br" href="index.html">Burger i<span class="navbar-br"> Schabowy</span></a>
           <button class="navbar-toggler" id='toggler' type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +25,283 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#menu">Menu</a>
+                <a class="nav-link" href="#aboutus">O nas</a>
+                <a class="nav-link" href="#galery">Galeria</a>
                 <a class="nav-link" href="#contact">Kontakt</a>
             </div>
           </div>
         </div>
-    </nav>
-    <header>
-        <div class="hero-img">
-            <div class="hero-shadow"></div>
-            <a href="#menu"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </header>
+      </nav>
+<header>
+    <div class="hero-img">
+        <div class="hero-shadow"></div>
+        <a href="#menu"><i class="fas fa-chevron-down"></i></a>
+    </div>
+</header>
+<div class="menu-wrapper" id='menu'>
+    <h2>Menu</h2>
+  <div class="menu-tabs">
+    <button class="menu-tab">Zakąski</button>
+    <button class="menu-tab">Sałatki</button>
+    <button class="menu-tab">Zupy</button> 
+    <button class="menu-tab">Dodatki</button>
+    <button class="menu-tab">Dania Jarskie</button>
+    <button class="menu-tab">Ryby</button>
+    <button class="menu-tab">Dania Firmowe</button>
+    <button class="menu-tab">Dania z Kurczaka</button>
+    <button class="menu-tab">Dania z Wołowiny</button>
+    <button class="menu-tab">Dania z Cielęciny</button>
+    <button class="menu-tab">Dania z Wieprzowiny</button>
+    <button class="menu-tab">Surówki i Warzywa</button>
+    <button class="menu-tab">Pierogi Własnego wyrobu</button>
+  </div>
+  <div class="menu-section block" id="Zakąski">
+    <h3>SER PLEŚNIOWY<span>10,00</span></h3>
+    <p>PANIEROWANY, SMAŻONY Z ŻURAWINĄ I GRZANKĄ</p>
+    <hr>
+    <h3>CHLEB ZE SMALCEM<span>5,00</span></h3>
+    <p>I OGÓRKIEM KISZONYM</p>
+    <hr>
+    <h3>ŚLEDŹ W OLEJU PO WIEJSKU<span>11,00</span></h3>
+    <p>Z CEBULKĄ, OGÓRKIEM KISZONYM I CHLEBEM</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Sałatki">
+    <h3>SAŁATKA Z KURCZAKIEM<span>20,00</span></h3>
+    <p>FILET PANIEROWANY, SAŁATA, OGÓREK ZIELONY,POMIDOR,CEBULA, SEZAM, SOS CZOSNKOWY</p>
+    <hr>
+    <h3>SAŁATKA HAWAJSKA<span>20,00</span></h3>
+    <p>Z KURCZAKIEM SAUTE W CURRY, SAŁATA, OGÓREK ZIELONY, CEBULA, KUKURYDZA, ANANAS, SOS MAJONEZOWY</p>
+    <hr>
+    <h3>SAŁATKA GRECKA<span>17,00</span></h3>
+    <p>SAŁATA, OGÓREK, POMIDOR, CEBULA, OLIWKI, SER FETA, SOS VINAIGRETT</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Zupy">
+    <h3>ROSÓŁ<span>7,00</span></h3>
+    <p>Z MAKARONEM</p>
+    <hr>
+    <h3>ŻUREK ŚLĄSKI<span>8,00</span></h3>
+    <p>Z KIEŁBASĄ, JAJKIEM I ZIEMNIAKAMI</p>
+    <hr>
+    <h3>ŻUREK<span>4,00</span></h3>
+    <p>CZYSTY</p>
+    <hr>
+    <h3>ZUPA CZOSNKOWA<span>10,00</span></h3>
+    <p>Z GRZANKAMI</p>
+    <hr>
+    <h3>FLACZKI<span>10,00</span></h3>
+    <p>Z PIECZYWEM</p>
+    <hr>
+    <h3>BARSZCZ<span>10,00</span></h3>
+    <p>Z KROKIETEM</p>
+    <hr>
+    <h3>BARSZCZ<span>4,00</span></h3>
+    <p>CZYSTY</p>
+    <hr>
+    <h3>ZUPA DNIA<span>6,00</span></h3>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dodatki">
+    <h3>FRYTKI<span>6,00</span></h3>
+    <hr>
+    <h3>ZIEMNIAKI SMAŻONE<span>6,00</span></h3>
+    <hr>
+    <h3>ZIEMNIAKI GOTOWANE<span>6,00</span></h3>
+    <hr>
+    <h3>KLUSKI BIAŁE<span>6,00/4,00</span></h3>
+    <p>10 LUB 5 SZTUK</p>
+    <hr>
+    <h3>KLUSKI BIAŁE<span>8,00/5,00</span></h3>
+    <p>10 LUB 5 SZTUK Z SOSEM MIĘSNYM</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania Jarskie">
+    <h3>PLACKI ZIEMNIACZANE<span>17,00</span></h3>
+    <p>ZE ŚMIETANĄ I CUKREM</p>
+    <hr>
+    <h3>PLACKI ZIEMNIACZANE<span>20,00</span></h3>
+    <p>W SOSIE GRZYBOWYM</p>
+    <hr>
+    <h3>SER PO CZESKU<span>21,00</span></h3>
+    <p>PANIEROWANY SMAŻONY Z ŻURAWINĄ (DO WYBORU PLEŚNIOWY LUB ŻÓŁTY), ZIEMNIAKI GOTOWANE LUB FRYTKI, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Ryby">
+    <h3>ŁOSOŚ wg/w 100g<span>12,00</span></h3>
+    <p>FILET Z ZIOŁAMI I MASEŁKIEM PIECZONY W FOLII</p>
+    <hr>
+    <h3>DORSZ wg/w 100g<span>9,00</span></h3>
+    <p>PANIEROWANY SMAŻONY</p>
+    <hr>
+    <h3>PSTRĄG wg/w 100g<span>9,00</span></h3>
+    <p>SAUTE Z CZOSNKIEM</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania Firmowe">
+    <h3>GOLONKA GOTOWANA wg/w 100g<span>4,60</span></h3>
+    <p>PEKLOWANA Z MUSZTARDĄ</p>
+    <hr>
+    <h3>GOLONKA FIRMOWA wg/w 100g<span>4,80</span></h3>
+    <p>OPIEKANA NA KAPUŚCIE FIRMOWEJ Z CEBULKĄ, MUSZTARDA</p>
+    <hr>
+    <h3>GOLONKA MEKSYKAŃSKA wg/w 100g<span>4,80</span></h3>
+    <p>OPIEKANA Z SOSEM MEKSYKAŃSKIM, MUSZTARDA</p>
+    <hr>
+    <h3>GOLONKA GRZYBOWA wg/w 100g<span>5,40</span></h3>
+    <p>OPIEKANA Z SOSEM Z GRZYBÓW LEŚNYCH, MUSZTARDA</p>
+    <hr>
+    <h3>ŻEBERKA SMAŻONE wg/w 100g<span>6,50</span></h3>
+    <p>PEKLOWANE W KAPUŚCIE FIRMOWEJ</p>
+    <hr>
+    <h3>PÓŁMISEK ŚLĄSKI<span>36,00</span></h3>
+    <p>GOLONKA GOTOWANA, PIECZEŃ Z KARCZKU, ŻEBERKO FIRMOWE, MUSZTARDA, ZIEMNIAKI SMAŻONE, KAPUSTA ZASMAŻANA, SURÓWKA Z KISZONE KAPUSTY</p>
+    <hr>
+    <h3>PÓŁMISEK GOSPODYNI<span>31,00</span></h3>
+    <p>ROLADKA WIEPRZOWA, PIECZEŃ Z KARCZKU, FILET, SOS MIĘSNY, KUSKI, ZESTAW Z 3 SURÓWEK</p>
+    <hr>
+    <h3>WĄTRÓBKA<span>15,00</span></h3>
+    <p>WIEPRZOWA Z CEBULKĄ</p>
+    <hr>
+    <h3>WĄTRÓBKA PO MYŚLIWSKU<span>15,00</span></h3>
+    <p>Z CEBULKĄ I BOCZKIEM</p>
+    <hr>
+    <h3>OZOREK GOTOWANY wg/w 100g<span>8,00</span></h3>
+    <p>WIEPRZOWY W SOSIE CHRZANOWYM</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania z Kurczaka">
+    <h3>KOTLET DE VOLAILLE<span>26,00 </span></h3>
+    <p>Z SEREM I MASŁEM CZOSNKOWYM, FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>FILET LEŚNY<span>26,00</span></h3>
+    <p>W SOSIE GRZYBOWYM, FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTĄ GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>FILET PANIEROWANY<span>23,00</span></h3>
+    <p>SAUTE Z CZOSNKIEM</p>
+    <hr>
+    <h3>FILET ZAPIEKANY<span>25,00</span></h3>
+    <p>Z KAPUSTĄ ZASMAŻANĄ POD SEROWĄ PIERZYNKĄ, FRYTKI LUB ZIEMNIAKI GOTOWANE</p>
+    <hr>
+    <h3>FILECIKI<span>23,00</span></h3>
+    <p>FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania z Wołowiny">
+    <h3>ROLADA WOŁOWA<span>28,00</span></h3>
+    <p>W SOSIE MIĘSNYM, KLUSKI, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>POLĘDWICA WOŁOWA<span>32,00</span></h3>
+    <p>W SOSIE GRZYBOWYM, FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>POLĘDWICA WOŁOWA<span>32,00</span></h3>
+    <p>W SOSIE MEKSYKAŃSKIM, FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania z Cielęciny">
+    <h3>SZNYCEL Z JAJKIEM<span>30,00</span></h3>
+    <p>FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA  </p>
+    <hr>
+    <h3>SZNYCEL W SOSIE GRZYBOWYM<span>31,00</span></h3>
+    <p>FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Dania z Wieprzowiny">
+    <h3>ROLADA WIEPRZOWA<span>26,00</span></h3>
+    <p>2SZT. W SOSIE MIĘSNYM, KLUSKI, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>PIECZEŃ WIEPRZOWA<span>23,00</span></h3>
+    <p>W SOSIE MIĘSNYM, KLUSKI, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>KOTLET SCHABOWY<span>23,00</span></h3>
+    <p>PANIEROWANY, FRYTKI LUB ZIEMNIAKI GOTOWANE, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>SCHAB ZAPIEKANY<span>25,00</span></h3>
+    <p>Z KAPUSTĄ ZASMAŻANĄ POD SEROWĄ PIERZYNKĄ, FRYTKI LUB ZIEMNIAKI GOTOWANE</p>
+    <hr>
+    <h3>PLACEK PO GÓRALSKU<span>26,00</span></h3>
+    <p>ZE SCHABEM W SOSIE GRZYBOWYM</p>
+    <hr>
+    <h3>PLACEK PO GRECKU<span>26,00</span></h3>
+    <p>Z POLĘDWICZKĄ WIEPRZOWĄ I SOSEM TZATZIKI</p>
+    <hr>
+    <h3>PLACEK PO WĘGIERSKU<span>25,00</span></h3>
+    <p>2SZT. W SOSIE MIĘSNYM, KLUSKI, KAPUSTA GOTOWANA LUB SURÓWKA</p>
+    <hr>
+    <h3>1/2 PLACEK PO WĘGIERSKU<span>15,00</span></h3>
+    <p>Z GULASZEM WIEPRZOWYM</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Surówki i Warzywa">
+    <h3>ZESTAW SURÓWEK<span>8,00</span></h3>
+    <hr>
+    <h3>BROKUŁY GOTOWANE<span>8,00</span></h3>
+    <p>Z SOSEM CZOSNKOWYM LUB MASEŁKIEM</p>
+    <hr>
+    <h3>BUKIET WARZYW GOTOWANY<span>8,00</span></h3>
+    <p>Z SOSEM CZOSNKOWYM LUB MASEŁKIEM</p>
+    <hr>
+    <h3>KAPUSTA FIRMOWA<span>6,00</span></h3>
+    <hr>
+    <h3>KAPUSTA ZASMAŻANA<span>6,00</span></h3>
+    <p>KISZONA</p>
+    <hr>
+    <h3>KAPUSTA NIEBIESKA GOTOWANA<span>6,00</span></h3>
+    <hr>
+    <h3>BURACZKI Z CHRZANEM<span>6,00</span></h3>
+    <hr>
+    <h3>SURÓWKA Z KAPUSTY BIAŁEJ<span>6,00</span></h3>
+    <hr>
+    <h3>SURÓWKA Z KAPUSTY KISZONEJ BIAŁEJ<span>6,00</span></h3>
+    <hr>
+    <h3>SURÓWKA Z KAPUSTY BIAŁO-NIEBIESKIEJ<span>6,00</span></h3>
+    <hr>
+    <h3>SURÓWKA Z MARCHEWKI<span>6,00</span></h3>
+    <hr>
+    <h3>OGÓREK<span>6,00</span></h3>
+    <p>KISZONY LUB KONSERWOWY</p>
+    <hr>
+  </div>
+  <div class="menu-section" id="Pierogi Własnego Wyrobu">
+    <h3>Z KASZĄ GRYCZANĄ (10 szt)<span>20,00</span></h3>
+    <p>PIECZARKAMI I ŻÓŁTYM SEREM POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>Z MIĘSEM (10 szt)<span>23,00</span></h3>
+    <p>POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>Z KAPUSTĄ (10 szt)<span>23,00</span></h3>
+    <p>PIECZARKAMI POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>ZE SZPINAKIEM (10 szt)<span>25,00</span></h3>
+    <p>BIAŁYM SEREM POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>RUSKIE (10 szt)<span>26,00</span></h3>
+    <p>POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>MIX (10 szt)<span>26,00</span></h3>
+    <p>SKOMPONUJ WŁASNY ZESTAW SMAKÓW POLANE SKWARKAMI Z BOCZKU I CEBULKĄ</p>
+    <hr>
+    <h3>Z BIAŁYM SEREM (10 szt)<span>25,00</span></h3>
+    <p>POLANE MASEŁKIEM I POSYPANE CUKREM</p>
+    <hr>
+  </div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2364.0070037275127!2d17.35685021585046!3d53.66467598004695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47023710dfb271bd%3A0x3bbfbe6770cc7193!2zUnluZWsgOCwgNzctMzAwIEN6xYJ1Y2jDs3c!5e0!3m2!1spl!2spl!4v1621364861699!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<footer id='contact'>
+  <div>
+    <h3>Numer telefonu</h3>
+    <p>-nr tel stacjonarny-</p>
+    <p>-nr tel-</p>
+  </div>
+  <div>
+    <h3>Zapraszamy!</h3>
+    <p>"Burger i Schabowy"</p>
+    <p>-adres-</p>
+  </div>
+  <div>
+    <h3>Godziny otwarcia:</h3>
+    <p>-godziny otwarcia-</p>
+  </div>
+</footer>
 </body>
 </html>

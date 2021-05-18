@@ -1,0 +1,87 @@
+@import '_colors';
+
+nav 
+{
+    transition: background-color 0.6s;
+    z-index: 1;
+    text-transform: uppercase;
+    a,
+    i 
+    {
+        font-size: 25px;
+        color: white;
+    }
+    a:hover
+    {
+        color: white;
+    }
+    .nav-link:hover
+    {
+      color: $hover;
+    }
+    span
+    {
+        color: $hover;
+    }
+    .navbar-br
+    {
+        text-decoration: none;
+    }
+    .navbar-nav
+    {
+      a:hover 
+      {
+          color: $hover;
+      }
+    }
+    .fa-bars 
+    {
+        padding: 10px;
+    }
+
+    .active {
+        color: $hover;
+    }
+}
+header
+{
+  h1
+  {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  p
+  {
+    font-size: 20px;
+  }
+  .hero-img
+  {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/hero-big.jpg"), linear-gradient(#000, #000);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+  }
+  .hero-shadow
+  {
+    position: absolute;
+    width: 100%;height: 100%;
+    background-color: rgba(28, 23, 16,.5);
+    z-index: -10;
+  }
+  .fa-chevron-down
+  {
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+}
+.navbar-toggler:focus
+{ 
+  box-shadow: none !important;
+}

@@ -1,3 +1,225 @@
+nav {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+nav a,
+nav i {
+  font-size: 25px;
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav .nav-link:hover {
+  color: #73542f;
+}
+
+nav span {
+  color: #73542f;
+}
+
+nav .navbar-br {
+  text-decoration: none;
+}
+
+nav .navbar-nav a:hover {
+  color: #73542f;
+}
+
+nav .fa-bars {
+  padding: 10px;
+}
+
+nav .active {
+  color: #73542f;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-big.jpg"), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: url("../img/hero-big.jpg"), linear-gradient(#000, #000);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 23, 16, 0.5);
+  z-index: -10;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.menu-section {
+  margin: 1rem;
+  position: relative;
+  width: 140vh;
+  display: none;
+}
+
+.menu-section h3 {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 50px;
+}
+
+.menu-section p {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  color: rgba(36, 16, 16, 0.5);
+}
+
+.menu-section span {
+  font-weight: bold;
+  color: #73542f;
+  position: absolute;
+  margin-left: 50px;
+  right: 0;
+}
+
+.menu-section.block {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: a-1 0.5s;
+          animation: a-1 0.5s;
+  display: block;
+}
+
+.menu-wrapper {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+  width: 100%;
+  padding: 1em;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  background-color: white;
+}
+
+.menu-wrapper h2 {
+  font-family: 'Abril Fatface', cursive;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-tabs {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-tab {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-weight: bold;
+  border: none;
+  border-left: 2px solid rgba(115, 84, 47, 0.5);
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.menu-tab:focus {
+  border-left: 2px solid #73542f;
+}
+
+.menu-tab-active {
+  background-color: #73542f;
+}
+
+.menu-tab:hover {
+  border-left: 2px solid #73542f;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+@-webkit-keyframes a-1 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes a-1 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -14,74 +236,144 @@ body {
   background-color: white;
 }
 
-nav {
-  -webkit-transition: background-color 0.6s;
-  transition: background-color 0.6s;
-  z-index: 1;
-  text-transform: uppercase;
-}
-
-nav a,
-nav i {
-  font-size: 25px;
-  color: white;
-}
-
-nav a:hover {
-  color: red;
-}
-
-nav .navbar-br {
-  text-decoration: none;
-}
-
-nav .navbar-nav a:hover {
-  color: red;
-}
-
-nav .fa-bars {
-  padding: 10px;
-}
-
-nav .active {
-  color: red;
-}
-
-header h1 {
-  text-transform: uppercase;
-  font-size: 50px;
-}
-
-header p {
-  font-size: 20px;
-}
-
-header .hero-img {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/hero-sm.jpg"), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
-  background-image: url("../img/hero-sm.jpg"), linear-gradient(#000, #000);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
-}
-
-header .hero-shadow {
-  position: absolute;
+footer {
+  font-family: 'Abril Fatface', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
   width: 100%;
-  height: 100%;
-  background-color: rgba(28, 23, 16, 0.438);
-  z-index: -10;
 }
 
-header .fa-chevron-down {
-  position: absolute;
-  bottom: 20px;
-  font-size: 30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  color: white;
+footer h3 {
+  color: #73542f;
+}
+
+footer h3, footer p {
+  text-align: center;
+  margin: 1rem;
+}
+
+@media (max-width: 480px) {
+  footer h3 {
+    font-size: 13px;
+  }
+  footer p {
+    font-size: 8px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav i, nav a {
+    font-size: 20px;
+  }
+  .navbar-br {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  footer h3 {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 10px;
+    margin: 0;
+  }
+  .card-wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-section {
+    font-size: 5px;
+    position: relative;
+    display: none;
+    width: 80%;
+  }
+  .menu-section h3 {
+    margin-right: 50px;
+  }
+  .menu-section span {
+    position: absolute;
+    margin-left: 50px;
+    right: 0;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper h2 {
+    font-size: 30px;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .menu-tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 12px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-bottom: 20px;
+  }
+  .menu-tab {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    line-height: 1;
+    border-left: none;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+  .menu-tab:focus {
+    border-bottom: 2px solid #73542f;
+    border-left: none;
+  }
+  .menu-tab:hover {
+    border-left: none;
+    border-bottom: 2px solid rgba(115, 84, 47, 0.5);
+  }
+  .card h3 {
+    font-size: 20px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

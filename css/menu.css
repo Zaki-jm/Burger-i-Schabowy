@@ -1,0 +1,138 @@
+.menu-section {
+  margin: 1rem;
+  position: relative;
+  width: 140vh;
+  display: none;
+}
+
+.menu-section h3 {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 50px;
+}
+
+.menu-section p {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  color: rgba(36, 16, 16, 0.5);
+}
+
+.menu-section span {
+  font-weight: bold;
+  color: #73542f;
+  position: absolute;
+  margin-left: 50px;
+  right: 0;
+}
+
+.menu-section.block {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: a-1 0.5s;
+          animation: a-1 0.5s;
+  display: block;
+}
+
+.menu-wrapper {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+  width: 100%;
+  padding: 1em;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  background-color: white;
+}
+
+.menu-wrapper h2 {
+  font-family: 'Abril Fatface', cursive;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-tabs {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-tab {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-weight: bold;
+  border: none;
+  border-left: 2px solid rgba(115, 84, 47, 0.5);
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.menu-tab:focus {
+  border-left: 2px solid #73542f;
+}
+
+.menu-tab-active {
+  background-color: #73542f;
+}
+
+.menu-tab:hover {
+  border-left: 2px solid #73542f;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+@-webkit-keyframes a-1 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes a-1 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=menu.css.map */
