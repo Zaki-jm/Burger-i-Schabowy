@@ -20,7 +20,7 @@
 
 .menu-section span {
   font-weight: bold;
-  color: #ccb639;
+  color: #73542f;
   position: absolute;
   margin-left: 50px;
   right: 0;
@@ -92,15 +92,15 @@
 }
 
 .menu-tab:focus {
-  border-left: 2px solid #ccb639;
+  border-left: 2px solid #73542f;
 }
 
 .menu-tab-active {
-  background-color: #ccb639;
+  background-color: #73542f;
 }
 
 .menu-tab:hover {
-  border-left: 2px solid #ccb639;
+  border-left: 2px solid #73542f;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
 }
