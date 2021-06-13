@@ -67,6 +67,43 @@ header .hero-shadow {
   z-index: -10;
 }
 
+header .social-media {
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+header .media-link {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  box-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 50px;
+}
+
 header .fa-chevron-down {
   position: absolute;
   bottom: 20px;

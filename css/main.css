@@ -67,6 +67,43 @@ header .hero-shadow {
   z-index: -10;
 }
 
+header .social-media {
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+header .media-link {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  box-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 50px;
+}
+
 header .fa-chevron-down {
   position: absolute;
   bottom: 20px;
@@ -231,7 +268,6 @@ header .fa-chevron-down {
 
 .onas {
   width: 100%;
-  height: 70vh;
   background-image: url("../img/schabowy.jpg");
 }
 
@@ -295,13 +331,12 @@ footer h3, footer p {
   margin: 1rem;
 }
 
-@media (max-width: 480px) {
-  footer h3 {
-    font-size: 13px;
-  }
-  footer p {
-    font-size: 8px;
-    margin: 0;
+@media (max-width: 1024px) {
+  .onas .panel {
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -310,7 +345,6 @@ footer h3, footer p {
     font-size: 20px;
   }
   .navbar-br {
-    font-family: 'Abril Fatface', cursive;
     font-size: 20px;
     text-decoration: none;
   }
@@ -351,7 +385,7 @@ footer h3, footer p {
     margin-left: 50px;
     right: 0;
   }
-  .wrapper {
+  .menu-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -363,7 +397,7 @@ footer h3, footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .wrapper h2 {
+  .menu-wrapper h2 {
     font-size: 30px;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
@@ -413,14 +447,44 @@ footer h3, footer p {
   header p {
     font-size: 14px;
   }
+  .onas .panel {
+    font-size: 15px;
+  }
+  .onas .panel h2 {
+    font-size: 33px;
+  }
+  .onas .panel #inv {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
+  footer h3 {
+    font-size: 13px;
+  }
+  footer p {
+    font-size: 8px;
+    margin: 0;
+  }
   .onas .panel {
-    width: 80%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    font-size: 15px;
+  }
+  .onas .panel h2 {
+    font-size: 27px;
+  }
+  .onas .panel #inv {
+    font-size: 18px;
+  }
+  .menu-tab {
+    font-size: 17px;
+    min-width: 70%;
+  }
+  .menu-section h3 {
+    font-size: 20px;
+  }
+  .menu-section p {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
